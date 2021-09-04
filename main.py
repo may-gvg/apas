@@ -20,6 +20,42 @@ def list_page():
     args = ""
     return render_template("list.html", args=args)
 
+@app.route('/tuple')
+def tuple_page():
+    args = ""
+    return render_template("tuple.html", args=args)
+
+@app.route('/set')
+def set_page():
+    args = ""
+    return render_template("set.html", args=args)
+
+
+@app.route('/dict')
+def dict_page():
+    args = ""
+    return render_template("dict.html", args=args)
+
+
+@app.route('/text')
+def text_page():
+    args = ""
+    return render_template("text.html", args=args)
+
+
+@app.route('/numbers')
+def numbers_page():
+    args = ""
+    return render_template("numbers.html", args=args)
+
+
+@app.route('/bool')
+def bool_page():
+    args = ""
+    return render_template("bool.html", args=args)
+
+
+
 
 @app.route("/favorites/add", methods=['POST'])
 def add_to_favorites():
